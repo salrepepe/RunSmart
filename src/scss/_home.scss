@@ -1,0 +1,52 @@
+.bebebe{
+  height: 96px;
+}
+.first-screen {
+  padding: 165px 0;
+  background: url("../img/1stsection/bg.png") center/cover;
+  color: white;
+
+  &__title {
+    font-size: 42px;
+    margin-bottom: 17px;
+    font-family: $museo700;
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    margin-bottom: 67px;
+    font-family: "Museo Sans Cyrl 500", sans-serif;
+  }
+
+  &__decsrBLock {
+    width: 132px;
+    max-height: 96px;
+    margin-right: 69px;
+  }
+
+  &__descr {
+    font-size: 14px;
+  }
+
+  &__buttonBlock {
+    margin-top: 66px;
+  }
+
+  &__button {
+    @include btns(301px, 51px, 16px);
+  }
+
+  &__linkBlock {
+    margin-top: 18px;
+  }
+
+  &__linkTxt {
+    font-size: 16px;
+    font-family: "Museo Sans Cyrl 500", sans-serif;
+  }
+
+  &__link {
+    color: #FFFFFF;
+    margin-left: 5px;
+  }
+}

@@ -1,0 +1,17 @@
+$museo300: 'Museo Sans Cyrl 300', sans-serif;
+$museo700: 'Museo Sans Cyrl 700', sans-serif;
+@mixin btns($wd, $hg, $fz){
+  display: block;
+  width: $wd;
+  height: $hg;
+  background: #C70101;
+  font-size: $fz;
+  color: white;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  text-transform: uppercase;
+}

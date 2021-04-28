@@ -1,0 +1,26 @@
+@mixin owlNav($img){
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 50px;
+  background: $img;
+}
+.slider{
+  padding: 95px 0 100px;
+  .owl-carousel{
+    max-width: 750px;
+    margin: 0 auto;
+  }
+  .owl-nav{
+    margin: 0;
+    .owl-prev{
+      @include owlNav(url('../img/slider/chevron-left-solid@1X.png')center/cover);
+      left: -100px;
+    }
+    .owl-next{
+      @include owlNav(url('../img/slider/chevron-right-solid@1X.png')center/cover);
+      right: -100px;
+    }
+  }
+}

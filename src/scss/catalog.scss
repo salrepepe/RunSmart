@@ -1,0 +1,168 @@
+.catalog {
+  &__content {
+    display: none;
+
+    &_active {
+      display: block;
+    }
+  }
+
+  &__title {
+    font-family: $museo700;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 68px;
+  }
+
+  &__caption {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-bottom: 60px;
+  }
+
+  &__tab {
+    width: 200px;
+    height: 50px;
+    border: 1px solid #d0d0d0;
+    text-transform: uppercase;
+    color: #6b6b6b;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 10px;
+    transform: skew(-20deg);
+    transition: 0.5s;
+    margin-bottom: 60px;
+    cursor: pointer;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &_active {
+      background: #C70101;
+      color: #FFFFFF;
+    }
+
+    &:hover {
+      background: #C70101;
+      color: #FFFFFF;
+    }
+
+    .skew-text {
+      transform: skew(20deg);
+    }
+  }
+
+  &-card {
+    width: 100%;
+    height: 441px;
+    border: 1px solid #e8e8e8;
+    text-align: center;
+    padding: 25px 20px;
+    overflow: hidden;
+    margin-bottom: 19px;
+
+    &__img {
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      font-size: 16px;
+      font-family: $museo700;
+      margin-bottom: 18px;
+    }
+
+    &__descr {
+      font-size: 14px;
+      font-family: $museo300;
+      max-width: 259px;
+      margin: 0 auto;
+    }
+
+    &__moreBtn {
+      color: #C70101;
+      display: inline-block;
+      margin:15px 0 20px;
+    }
+    &__back{
+      color: #C70101;
+      display: block;
+      text-align: center;
+      margin-top: 70px;
+    }
+
+    &__line {
+      border-top: 1px solid #e8e8e8;
+    }
+
+    &__bottom {
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__price {
+      text-align: left;
+    }
+
+    &__oldPrice {
+      font-size: 14px;
+      text-decoration: line-through;
+      color: #b4b4b4;
+      margin-bottom: 8px;
+    }
+
+    &__newPrice {
+      font-size: 20px;
+    }
+
+    &__buyBtn {
+      @include btns(130px, 40px, 14px);
+      background: #C70101;
+    }
+
+    &__wrapper {
+      display: flex;
+      width: calc(200% + 40px);
+    }
+
+    &__item {
+      width: 50%;
+      transition: .5s;
+
+      &_active {
+        transform: translateX(-100%);
+      }
+    }
+    &__about{
+      width: 50%;
+      text-align: left;
+      list-style-type: none;
+      transition: .5s;
+      padding-right: 20px;
+      margin-left: 10px;
+
+      &_active {
+        transform: translateX(-100%);
+        margin-left: 0;
+      }
+    }
+    &__list {
+      max-height: 248px;
+      overflow: auto;
+      &-items {
+        padding-left: 20px;
+        list-style-type: none;
+        background: url("../img/catalog/square.png") left 7px/6px no-repeat;
+        margin-bottom: 20px;
+        font-family: $museo300;
+        font-size: 14px;
+
+
+      }
+    }
+
+  }
+}

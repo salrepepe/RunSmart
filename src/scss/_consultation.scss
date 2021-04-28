@@ -1,0 +1,18 @@
+.consultation{
+    background: url(../img/3rdsection/bg2.png) center top/cover no-repeat;
+    padding: 100px 0 90px;
+    &__title{
+        font-size: 36px;
+        color: white;
+        margin-bottom: 80px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__subtitle{
+        font-size: 20px;
+        color: white;
+        margin-bottom: 40px;
+        max-width: 396px;
+    }
+
+}

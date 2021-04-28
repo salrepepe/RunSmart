@@ -1,0 +1,38 @@
+.advantages{
+    padding: 71px 0 78px;
+    background: #f6f6f6;
+    &__title{
+        font-size: 30px;
+        color:black;
+        text-align: center;
+        margin-bottom: 65px;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between ;
+        .col{
+            text-align: center;
+            width: 247px;
+            .wrapper{
+                &__img{
+                    margin-bottom: 38px;
+                }
+                &__title{
+                    font-size: 18px;
+                    color: black;
+                    margin-bottom: 26px;
+                }
+                &__subtitle{
+                    font-family: $museo300;
+                    font-size: 14px;
+                    &__link{
+                        max-width: 247px;
+                        font-family: $museo300;
+                        font-size: 14px;
+                        color: #C70101;
+                    }
+                }
+            }
+        }
+    }
+}

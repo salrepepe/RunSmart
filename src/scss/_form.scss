@@ -1,0 +1,39 @@
+.consult-form{
+  max-width: 300px;
+  display: flex;
+  flex-flow: column wrap;
+ &__label{
+   width: 100%;
+ }
+  &__input {
+    width: 100%;
+    padding: 20px;
+    height: 50px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    &:valid{
+      &:not(:placeholder-shown){
+        border: 2px solid green;
+      }
+    }
+    &:invalid {
+      &:not( :placeholder-shown + .consult-form__validation){
+        font-size: 12px;
+        height: 100%;
+      }
+    }
+  }
+    &__validation {
+      color: #C70101;
+      font-size: 0;
+      height: 0;
+      white-space: nowrap;
+      transition: 0.5s;
+    }
+
+    &__btn {
+      @include btns(100%, 55px, 16px);
+    }
+  }
